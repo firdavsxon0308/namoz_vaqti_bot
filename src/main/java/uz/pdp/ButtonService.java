@@ -51,17 +51,16 @@ public class ButtonService {
         button1.setText("Haftalik namoz vaqti");
         button1.setCallbackData("weekly");
 
-        button2.setText("Oylik namoz vaqti");
-        button2.setCallbackData("monthly");
 
 
 
+
+        row.add(button1);
         row1.add(button);
-        row1.add(button1);
-        row.add(button2);
+
         rowList.add(row);
         rowList.add(row1);
-        rowList.add(row2);
+
         markup.setKeyboard(rowList);
 
         return markup;

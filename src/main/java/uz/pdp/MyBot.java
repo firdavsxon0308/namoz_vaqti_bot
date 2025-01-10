@@ -90,6 +90,7 @@ public class MyBot extends TelegramLongPollingBot {
                 SendMessage message = new SendMessage();
                 message.setChatId(chatId);
                 message.setText("✅ Asosiy menyudasiz!");
+                message.setReplyMarkup(buttonService.getReplyKeyboardMarkup());
                 try {
                     execute(message);
                 } catch (TelegramApiException e) {
@@ -129,7 +130,7 @@ public class MyBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "karoche_telegram_bot";
+        return "@sajdaTimes_bot";
 
 
     }
